@@ -1,0 +1,41 @@
+{
+  "info": {
+    "name": "Me-API Playground",
+    "_postman_id": "4cfa3a1a-9b4f-4b57-8e21-000000000001",
+    "description": "Basic requests for health, profile, skills, projects, and search.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "GET /health", "request": { "method": "GET", "url": "{{baseUrl}}/health" } },
+    { "name": "GET /profile", "request": { "method": "GET", "url": "{{baseUrl}}/profile" } },
+    { "name": "PUT /profile", "request": {
+      "method": "PUT",
+      "header": [ { "key": "Content-Type", "value": "application/json" } ],
+      "body": {
+        "mode": "raw",
+        "raw": "{\n  \"name\": \"Your Name\",\n  \"email\": \"you@example.com\",\n  \"education\": \"B.Tech CS\",\n  \"github\": \"https://github.com/yourhandle\",\n  \"linkedin\": \"https://www.linkedin.com/in/yourhandle\",\n  \"portfolio\": \"https://your-portfolio.example.com\"\n}"
+      },
+      "url": "{{baseUrl}}/profile"
+    }},
+    { "name": "GET /skills", "request": { "method": "GET", "url": "{{baseUrl}}/skills" } },
+    { "name": "GET /skills/top", "request": { "method": "GET", "url": "{{baseUrl}}/skills/top?limit=5" } },
+    { "name": "POST /skills", "request": {
+      "method": "POST",
+      "header": [ { "key": "Content-Type", "value": "application/json" } ],
+      "body": { "mode": "raw", "raw": "{ \"name\": \"python\",  }" },
+      "url": "{{baseUrl}}/skills"
+    }},
+    { "name": "GET /projects", "request": { "method": "GET", "url": "{{baseUrl}}/projects" } },
+    { "name": "GET /projects?skill=javascript", "request": { "method": "GET", "url": "{{baseUrl}}/projects?skill=javascript" } },
+    { "name": "POST /projects", "request": {
+      "method": "POST",
+      "header": [ { "key": "Content-Type", "value": "application/json" } ],
+      "body": { "mode": "raw", "raw": "{\n  \"title\": \"Demo\",\n  \"description\": \"Demo project\",\n  \"links\": [{\"type\":\"github\",\"url\":\"https://github.com/yourhandle/demo\"}],\n  \"skills\": [\"javascript\"]\n}" },
+      "url": "{{baseUrl}}/projects"
+    }},
+    { "name": "GET /search?q=api", "request": { "method": "GET", "url": "{{baseUrl}}/search?q=api" } }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:4000" }
+  ]
+}

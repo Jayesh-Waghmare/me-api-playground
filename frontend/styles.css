@@ -1,0 +1,111 @@
+:root {
+    --bg: #0f172a;
+    --fg: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #22c55e;
+    --card: #111827;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+}
+
+nav {
+    padding: 12px 16px;
+    background: #0b1220;
+    border-bottom: 1px solid #1f2937;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#apiBase {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+main {
+    padding: 16px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+section {
+    background: var(--card);
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+input {
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: var(--fg);
+    padding: 8px;
+    border-radius: 6px;
+}
+
+button {
+    background: var(--accent);
+    color: #04140b;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #0f172a;
+    border: 1px solid #334155;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+ul { list-style: none; padding-left: 0; }
+li { padding: 6px 0; border-bottom: 1px dashed #243140; }
+footer { text-align:center; color:var(--muted); padding:24px; }
+
+.profile-card { padding: 0; }
+.profile-grid { display: grid; grid-template-columns: 160px 1fr; gap: 8px 12px; }
+.profile-card strong { color: var(--muted); }
+.profile-card a { color: var(--accent); text-decoration: none; }
+.profile-card a:hover { text-decoration: underline; }
+.profile-card .mt { margin-top: 12px; }
+
+.skills-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skill-item {
+  display: inline-block;
+  background-color: #2c3e50;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 4px;
+}

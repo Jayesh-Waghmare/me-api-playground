@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Me‑API Playground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <nav>
+    <h1>Me‑API Playground</h1>
+    <span id="apiBase">(API: http://localhost:4000)</span>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Profile</h2>
+      <div id="profileBox" class="profile-card">Loading…</div>
+    </section>
+
+    <section>
+      <h2>Search Projects by Skill</h2>
+      <input id="skillInput" placeholder="e.g., javascript" />
+      <button id="skillBtn">Search</button>
+      <ul id="projList"></ul>
+    </section>
+
+    <section>
+      <h2>Free Text Search</h2>
+      <input id="qInput" placeholder="Search term" />
+      <button id="qBtn">Search</button>
+      <div class="columns">
+        <div>
+          <h3>Projects</h3>
+          <ul id="searchProj"></ul>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <ul id="searchSkills"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
