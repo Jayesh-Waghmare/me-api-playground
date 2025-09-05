@@ -3,8 +3,8 @@
 Small API + minimal UI that stores my profile (name, email, education, skills[], projects[], work[], links{github, linkedin, portfolio}) in a real database and exposes query endpoints.
 
 Live URLs
-- Backend API: 
-- Frontend UI: 
+- Backend API: https://me-api-playground-navy.vercel.app
+- Frontend UI: https://me-api-playground-frontend-ten.vercel.app
 - Public GitHub Repo: https://github.com/Jayesh-Waghmare
 
 Resume
@@ -39,14 +39,14 @@ See Postman collection in ./postman/MeAPI.postman_collection.json.
        npm run dev
    - API will run at http://localhost:4000 (GET /health returns 200)
 3) Frontend
-   - Open ./frontend/index.html in the browser
-   - It expects API at http://localhost:4000
+   - run npx serve.
+   - API will run at http://localhost:3000
    
 ## Setup (Production / Hosting)
 - Backend: Deploy to Vercel, Set env vars from .env.example.
-- Frontend: Deploy static files (frontend/) to Vercel.
+- Frontend: Deploy static files (frontend/) to Vercel. Set the backend url into the frontend env.
 
-## Sample curl
+## Sample curl to check endpoints
 - Health:
   curl http://localhost:4000/health
 - Profile read:
