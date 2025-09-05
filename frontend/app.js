@@ -1,4 +1,4 @@
-const API_BASE = (localStorage.getItem('API_BASE') || process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000').replace(/\/+$/, '');
+const API_BASE = (localStorage.getItem('API_BASE') || window.NEXT_PUBLIC_API_URL || 'http://localhost:4000').replace(/\/+$/, '');
 document.getElementById('apiBase').textContent = `(API: ${API_BASE})`;
 
 async function getJson(path) {
