@@ -3,8 +3,8 @@
 Small API + minimal UI that stores my profile (name, email, education, skills[], projects[], work[], links{github, linkedin, portfolio}) in a real database and exposes query endpoints.
 
 Live URLs
-- Backend API: 
-- Frontend UI: 
+- Backend API: https://me-api-playground-navy.vercel.app/
+- Frontend UI: https://me-api-playground-frontend-ten.vercel.app/
 - Public GitHub Repo: https://github.com/Jayesh-Waghmare
 
 ## Resume
