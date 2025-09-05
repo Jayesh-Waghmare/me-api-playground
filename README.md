@@ -54,7 +54,7 @@ See Postman collection in ./postman/MeAPI.postman_collection.json.
 - Profile update:
   curl -X PUT http://localhost:4000/profile ^
     -H "Content-Type: application/json" ^
-    -d "{\"name\":\"Jayesh Waghmare\",\"email\":\"jayeshwaghmare597@gmail.com\"}"
+    -d "{\"name\":\"Your name\",\"email\":\"your-email\"}"
 - Projects by skill:
   curl "http://localhost:4000/projects?skill=javascript"
 - Search:
